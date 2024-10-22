@@ -1,0 +1,51 @@
+/* .customSize{
+    height: 70%;
+    max-height: 300px;
+}
+
+.customButtonSides{
+    width:60px;
+    max-width: 100px;
+    height: 80px;
+    max-height: 100px;
+}
+
+.display{
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+} */
+
+.size-custom{
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+    min-height: 300px;
+}
+
+.size-custom-2{
+    min-width: 300px;
+    width: 300px;
+    /* height: 300px;
+    min-height: 300px; */
+}
+
+.border-radius-custom{
+    border-radius: 25px;
+}
+
+.border-radius-custom2{
+    border-radius: 16px;
+}
+
+.h-custom1{
+    height: 180px;
+    min-height: 180px;
+}
+
+.size-custom-1{
+    height: 85px;
+    min-height: 85px;
+    width: 135px;
+    min-width: 135px;
+}

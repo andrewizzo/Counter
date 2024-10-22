@@ -1,0 +1,56 @@
+<div class="bg-secondary vh-100 w-100 d-flex flex-column justify-content-center align-items-center gap-2">
+    <div class="bg-black size-custom-2 rounded-3 p-2 d-flex flex-row justify-content-between">
+        <div class="size-custom-3">
+            <button class="w-100 btn btn-light border border-black" (click)="setOpertatore()">
+                <span class="w-100">{{statoOperatore}}</span>
+            </button>
+        </div>
+        <div>
+            <input type="number" class="w-100 h-100" [(ngModel)]="contatore">
+        </div>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="d-flex flex-column justify-content-evenly p-2">
+            <button class="btn btn-light h-25" (click)="addValue(1)">
+                <span>
+                    {{opertatore}}1
+                </span>
+            </button>
+            <button class="btn btn-light h-25" (click)="addValue(5)">
+                <span>
+                    {{opertatore}}5
+                </span>
+            </button>
+        </div>
+        <div class="size-custom bg-black border-radius-custom p-2 d-flex flex-column justify-content-between">
+            <div class="bg-white border-radius-custom2 h-custom1 d-flex flex-column">
+                <div class="h-25 d-flex justify-content-center border-bottom border-black align-items-center">
+                    <span>{{opertatore}}{{contatore}}</span>
+                </div>
+                <div class="h-75 d-flex justify-content-end align-items-center">
+                    <span>{{displayContatore}}</span>
+                </div>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <button class="border-radius-custom2 btn btn-danger border-0 size-custom-1" (click)="subtraction()" [disabled]="isDisabledMin">-</button>
+                </div>
+                <div>
+                    <button class="border-radius-custom2 btn btn-success border-0 size-custom-1" (click)="add()" [disabled]="isDisabledPlus">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-evenly p-2">
+            <button class="btn btn-light h-25" (click)="addValue(10)">
+                <span>
+                    {{opertatore}}10
+                </span>
+            </button>
+            <button class="btn btn-light h-25" (click)="addValue(50)">
+                <span>
+                    {{opertatore}}50
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
